@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfa Conceito — Manutenção e Restauração Predial em São Paulo</title>
+  <meta name="description" content="Manutenção predial com segurança, durabilidade e acabamento impecável. Fachadas, impermeabilização, pintura e inspeções com drone. Agende uma visita técnica.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipos carregados via CSS depois (Poppins/Lato). Mantido leve aqui. -->
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Alfa Conceito — Manutenção e Restauração Predial" />
+  <meta property="og:description" content="Excelência técnica que protege e valoriza seu condomínio. Agende uma visita técnica pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Alfa Conceito",
+    "url": "https://www.seudominio.com.br",
+    "logo": "https://www.seudominio.com.br/assets/img/alfa.png",
+    "sameAs": [
+      "https://www.instagram.com/alfaconceitopec"
+    ],
+    "areaServed": "São Paulo, Brasil",
+    "brand": "Alfa Conceito",
+    "description": "Manutenção e restauração predial com foco em segurança, durabilidade e valorização."
+  }
+  </script>
+</head>
+<body>
+  <!-- ===== Header / Nav (fundo branco) ===== -->
+  <header class="site-header" data-bg="white">
+    <div class="container header__wrap">
+      <a href="#inicio" class="header__brand" aria-label="Alfa Conceito - Início">
+        <img src="assets/img/alfa.png" alt="Alfa Conceito" class="brand__logo" height="40" />
+      </a>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Processo</a></li>
+          <li><a href="#normas">Normas (NBR 16747)</a></li>
+          <li><a href="#provas">Resultados</a></li>
+          <li><a href="#reels-1">Vídeos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a class="btn btn--primary" href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica%20para%20meu%20condomínio."
+           target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+          Agendar visita técnica
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero conversão ===== -->
+  <section id="inicio" class="hero" data-section="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1>Manutenção predial com <span class="u-strong">segurança</span>, <span class="u-strong">durabilidade</span> e <span class="u-strong">acabamento impecável</span></h1>
+        <p>Da inspeção ao acabamento: fachadas, impermeabilização, pintura e reparos técnicos com garantia de até 5 anos.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--lg"
+             href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica."
+             target="_blank" rel="noopener">Agendar visita técnica</a>
+          <a class="btn btn--ghost btn--lg"
+             href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Preciso%20de%20um%20orçamento."
+             target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+        <ul class="hero__badges" role="list">
+          <li>+15 anos de experiência</li>
+          <li>Equipe segurada c/ responsabilidade técnica</li>
+          <li>Atuação em toda São Paulo</li>
+          <li>Conformidade com NBR 16747</li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <!-- imagem/ vídeo de fachada — substitua o poster -->
+        <video class="hero__video" playsinline muted autoplay loop poster="assets/img/hero-poster.jpg" aria-label="Obra de restauração de fachada">
+          <source src="assets/video/hero-vertical.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Bloco prova rápida (gatilho de reciprocidade) ===== -->
+  <section class="value-strip">
+    <div class="container value-strip__wrap">
+      <p><strong>Diagnóstico gratuito</strong> na primeira visita técnica para síndicos e administradoras.</p>
+      <a class="link--cta" href="https://wa.me/5511988247277?text=Quero%20agendar%20o%20diagnóstico%20gratuito.">Agendar agora</a>
+    </div>
+  </section>
+
+  <!-- ===== Serviços (cada item com parágrafo + slot de vídeo vertical) ===== -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <header class="section__head">
+        <h2>Serviços especializados</h2>
+        <p>Execução segura, técnica e com materiais de alto desempenho — do preparo à entrega final.</p>
+      </header>
+
+      <div class="cards">
+        <!-- Lavagem / hidrojato -->
+        <article class="card service">
+          <div class="service__copy">
+            <h3>Lavagem de fachada com hidrojato</h3>
+            <p>Remoção de sujidades, fungos e poluentes com pressão controlada, preservando o revestimento original e preparando a superfície para novos sistemas de acabamento.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20visita%20para%20lavagem%20de%20fachada." target="_blank" rel="noopener">Agendar visita</a>
+          </div>
+          <div class="service__media">
+            <video playsinline muted controls poster="assets/img/serv-lavagem.jpg" class="video-vertical" aria-label="Vídeo vertical: lavagem de fachada">
+              <source src="assets/video/serv-lavagem-vert.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <!-- Trincas / percussão -->
+        <article class="card service">
+          <div class="service__copy">
+            <h3>Teste de percussão e correção de trincas</h3>
+            <p>Mapeamento de desprendimentos e fissuras com percussão técnica, seguido de reparo estruturado (abertura, tratamento, selagem e regularização) para restabelecer segurança e estanqueidade.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20avaliação%20para%20trincas%20e%20fissuras." target="_blank" rel="noopener">Agendar avaliação</a>
+          </div>
+          <div class="service__media">
+            <video playsinline muted controls poster="assets/img/serv-percussao.jpg" class="video-vertical" aria-label="Vídeo vertical: teste de percussão">
+              <source src="assets/video/serv-percussao-vert.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <!-- Impermeabilização -->
+        <article class="card service">
+          <div class="service__copy">
+            <h3>Impermeabilização e juntas de dilatação</h3>
+            <p>Soluções específicas para lajes, marquises e fachadas, com escolha de sistemas de impermeabilização compatíveis ao substrato e ao ambiente, garantindo estanqueidade e durabilidade.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20visita%20para%20impermeabilização." target="_blank" rel="noopener">Agendar visita</a>
+          </div>
+          <div class="service__media">
+            <video playsinline muted controls poster="assets/img/serv-imper.jpg" class="video-vertical" aria-label="Vídeo vertical: impermeabilização">
+              <source src="assets/video/serv-imper-vert.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <!-- Pintura -->
+        <article class="card service">
+          <div class="service__copy">
+            <h3>Pintura externa, interna e áreas comuns</h3>
+            <p>Especificação de esquemas de pintura conforme exposição e substrato, correção de patologias e aplicação com controle de qualidade para acabamento uniforme e alta durabilidade.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20orçamento%20de%20pintura%20predial." target="_blank" rel="noopener">Solicitar orçamento</a>
+          </div>
+          <div class="service__media">
+            <video playsinline muted controls poster="assets/img/serv-pintura.jpg" class="video-vertical" aria-label="Vídeo vertical: pintura predial">
+              <source src="assets/video/serv-pintura-vert.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <!-- Pastilhas -->
+        <article class="card service">
+          <div class="service__copy">
+            <h3>Troca de pastilhas e revitalizações</h3>
+            <p>Substituição de peças soltas, rejuntamento técnico e recuperação de áreas com desplacamento, devolvendo a estética e a integridade do sistema de revestimento.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20avaliação%20para%20troca%20de%20pastilhas." target="_blank" rel="noopener">Agendar avaliação</a>
+          </div>
+          <div class="service__media">
+            <video playsinline muted controls poster="assets/img/serv-pastilha.jpg" class="video-vertical" aria-label="Vídeo vertical: troca de pastilhas">
+              <source src="assets/video/serv-pastilha-vert.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Processo (etapas + slot de vídeo vertical) ===== -->
+  <section id="como-funciona" class="process">
+    <div class="container">
+      <header class="section__head">
+        <h2>Como trabalhamos</h2>
+        <p>Etapas claras, segurança em cada fase e comunicação direta com o síndico.</p>
+      </header>
+
+      <ol class="steps">
+        <li>
+          <h3>Diagnóstico técnico</h3>
+          <p>Inspeção visual, percussão e, quando necessário, apoio de drone para mapear patologias e prioridades de intervenção.</p>
+        </li>
+        <li>
+          <h3>Planejamento da obra</h3>
+          <p>Definição de escopo, cronograma, ART/RT e plano de segurança. Orientações para comunicação com condôminos.</p>
+        </li>
+        <li>
+          <h3>Preparação e limpeza</h3>
+          <p>Lavagem de fachada, proteção de áreas e montagem de acessos (balancim/andaime) conforme norma.</p>
+        </li>
+        <li>
+          <h3>Tratamento e execução</h3>
+          <p>Correção de fissuras, impermeabilização, recomposição e pintura seguindo especificação técnica.</p>
+        </li>
+        <li>
+          <h3>Entrega e garantia</h3>
+          <p>Checklist de qualidade, orientações de manutenção e garantia de até 5 anos conforme serviço.</p>
+        </li>
+      </ol>
+
+      <div class="process__media">
+        <video playsinline muted controls poster="assets/img/processo-poster.jpg" class="video-vertical" aria-label="Vídeo vertical: processo de obra">
+          <source src="assets/video/processo-vert.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reels / Vitrine 1 ===== -->
+  <section id="reels-1" class="reels">
+    <div class="container">
+      <header class="section__head">
+        <h2>Na prática: obras e bastidores</h2>
+        <p>Vídeos curtos mostrando etapas e resultados reais.</p>
+      </header>
+
+      <div class="reels__grid">
+        <!-- Substituir por seus MP4 verticais (ou iframes, se preferir embed IG) -->
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-01.jpg">
+          <source src="assets/video/reel-01.mp4" type="video/mp4" />
+        </video>
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-02.jpg">
+          <source src="assets/video/reel-02.mp4" type="video/mp4" />
+        </video>
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-03.jpg">
+          <source src="assets/video/reel-03.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Normas / NBR 16747 (educação + reciprocidade) ===== -->
+  <section id="normas" class="standards">
+    <div class="container">
+      <header class="section__head">
+        <h2>Normas e conformidade (NBR 16747)</h2>
+        <p>Manutenção predial não é apenas estética — é segurança, lei e valorização do patrimônio.</p>
+      </header>
+
+      <div class="standard__cards">
+        <article class="std-card">
+          <h3>O que a NBR 16747 exige?</h3>
+          <p>Plano de manutenção com profissionais habilitados, registros técnicos e cronograma definido. Não é recomendação — é obrigação legal.</p>
+        </article>
+        <article class="std-card">
+          <h3>Por que cumprir?</h3>
+          <ul>
+            <li>Evita riscos e acidentes</li>
+            <li>Prolonga a vida útil da edificação</li>
+            <li>Reduz gastos com reparos emergenciais</li>
+            <li>Garante tranquilidade para moradores e gestores</li>
+          </ul>
+        </article>
+        <article class="std-card">
+          <h3>Receba o checklist da NBR</h3>
+          <p>Enviamos um checklist em PDF para ajudar seu condomínio a se organizar.</p>
+          <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20o%20checklist%20da%20NBR%2016747." target="_blank" rel="noopener">Pedir checklist</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Provas (antes/depois, depoimentos curtos, selos) ===== -->
+  <section id="provas" class="proof">
+    <div class="container">
+      <header class="section__head">
+        <h2>Resultados que falam por si</h2>
+        <p>Alguns dos condomínios que confiaram na Alfa Conceito.</p>
+      </header>
+
+      <div class="proof__grid">
+        <figure class="proof__item">
+          <img src="assets/img/case-01.jpg" alt="Fachada revitalizada - Cond. A" />
+          <figcaption>Revitalização completa da fachada — 12.000 m²</figcaption>
+        </figure>
+        <figure class="proof__item">
+          <img src="assets/img/case-02.jpg" alt="Impermeabilização de laje - Cond. B" />
+          <figcaption>Impermeabilização de lajes técnicas</figcaption>
+        </figure>
+        <figure class="proof__item">
+          <img src="assets/img/case-03.jpg" alt="Troca de pastilhas - Cond. C" />
+          <figcaption>Troca de pastilhas e recomposição</figcaption>
+        </figure>
+      </div>
+
+      <div class="ratings">
+        <div class="rating__block">
+          <strong>+15 anos</strong>
+          <span>de experiência</span>
+        </div>
+        <div class="rating__block">
+          <strong>5 anos</strong>
+          <span>de garantia*</span>
+        </div>
+        <div class="rating__block">
+          <strong>100%</strong>
+          <span>equipe segurada</span>
+        </div>
+      </div>
+      <p class="disclaimer">*Garantia varia conforme o tipo de serviço e especificação técnica.</p>
+    </div>
+  </section>
+
+  <!-- ===== Reels / Vitrine 2 (foco em benefício) ===== -->
+  <section id="reels-2" class="reels reels--alt">
+    <div class="container">
+      <header class="section__head">
+        <h2>Segurança, estética e valorização</h2>
+        <p>Veja como cada etapa impacta no resultado final do seu prédio.</p>
+      </header>
+      <div class="reels__grid">
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-04.jpg">
+          <source src="assets/video/reel-04.mp4" type="video/mp4" />
+        </video>
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-05.jpg">
+          <source src="assets/video/reel-05.mp4" type="video/mp4" />
+        </video>
+        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-06.jpg">
+          <source src="assets/video/reel-06.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sobre (curto e técnico) ===== -->
+  <section id="sobre" class="about">
+    <div class="container about__grid">
+      <div class="about__copy">
+        <h2>Quem é a Alfa Conceito</h2>
+        <p>Engenharia predial que une técnica e cuidado com cada detalhe. Trabalhamos com materiais de alto desempenho, especificações corretas e execução segura — para entregar obras que duram.</p>
+        <ul class="ticks">
+          <li>Equipe especializada e segurada</li>
+          <li>ART/Responsabilidade técnica</li>
+          <li>Comunicação clara com o condomínio</li>
+        </ul>
+      </div>
+      <div class="about__media">
+        <img src="assets/img/sobre-equipe.jpg" alt="Equipe Alfa Conceito em obra" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA final forte ===== -->
+  <section class="cta-final">
+    <div class="container cta-final__wrap">
+      <h2>Pronto para valorizar e proteger seu condomínio?</h2>
+      <p>Agendamos uma visita técnica para entender o seu caso e propor a solução certa.</p>
+      <a class="btn btn--primary btn--xl"
+         href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica."
+         target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ===== Contato / Área atendida ===== -->
+  <section id="contato" class="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <h2>Contato</h2>
+        <p>Atendemos toda São Paulo, com destaque para Tatuapé e Zona Leste.</p>
+        <ul class="contact__list">
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511988247277" target="_blank" rel="noopener">(11) 98824-7277</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/alfaconceitopec" target="_blank" rel="noopener">@alfaconceitopec</a></li>
+        </ul>
+        <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener">Solicitar orçamento</a>
+      </div>
+      <div class="contact__form">
+        <!-- Se quiser ativar um formulário depois, mantemos o espaço -->
+        <div class="contact__box">
+          <h3>Prefere ser contatado?</h3>
+          <p>Deixe seus dados que retornamos por WhatsApp.</p>
+          <form action="#" method="post" class="form" data-form="lead-form">
+            <label>Nome* <input type="text" name="nome" required></label>
+            <label>Condomínio/Edifício* <input type="text" name="condominio" required></label>
+            <label>WhatsApp* <input type="tel" name="whatsapp" required></label>
+            <label>Serviço de interesse
+              <select name="servico">
+                <option value="fachada">Revitalização de fachada</option>
+                <option value="impermeabilizacao">Impermeabilização</option>
+                <option value="pintura">Pintura</option>
+                <option value="pastilhas">Troca de pastilhas</option>
+                <option value="outros">Outros</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn--primary">Quero ser contatado</button>
+            <small class="form__hint">Ao enviar, você concorda em receber contato pelo WhatsApp.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/alfa.png" alt="Alfa Conceito" class="footer__logo" />
+        <p class="footer__desc">Excelência em manutenção e restauração predial. Segurança, durabilidade e valorização do seu patrimônio.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Processo</a></li>
+          <li><a href="#normas">Normas</a></li>
+          <li><a href="#provas">Resultados</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__cta">
+        <h4>Agende sua visita</h4>
+        <a class="btn btn--primary" href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica."
+           target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- ===== Footer Credit (seu bloco) ===== -->
+    <div class="footer__credit">
+      <p class="footer__credit-text">Desenvolvido por</p>
+      <a href="https://tulludigital.github.io/TulluMotion/"
+         class="footer__credit-link"
+         target="_blank"
+         rel="noopener">
+        <img src="assets/img/tullu.png" alt="Tullu Motion" class="footer__credit-logo">
+        <img src="assets/img/weblab.png.png" alt="Tullu WebLab" class="footer__credit-logo weblab-logo">
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===== Barra fixa conversão (mobile/desktop) ===== -->
+  <div class="sticky-cta" role="region" aria-label="Ação rápida">
+    <a class="btn btn--whatsapp"
+       href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica."
+       target="_blank" rel="noopener">
+      Agendar visita técnica
+    </a>
+  </div>
+
+  <!-- ===== Botão flutuante WhatsApp ===== -->
+  <a href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Preciso%20de%20ajuda."
+     class="fab-whatsapp" aria-label="Abrir WhatsApp" target="_blank" rel="noopener">
+     <!-- Ícone será aplicado via CSS ou SVG inline no CSS -->
+  </a>
+
+  <!-- (Opcional) script para enviar formulário ao WhatsApp/n8n futuramente -->
+  <script>
+    document.querySelector('[data-form="lead-form"]')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+      const msg = `Olá Alfa Conceito!%0AQuero ser contatado.%0A` +
+        `Nome: ${encodeURIComponent(data.get('nome'))}%0A` +
+        `Condomínio: ${encodeURIComponent(data.get('condominio'))}%0A` +
+        `WhatsApp: ${encodeURIComponent(data.get('whatsapp'))}%0A` +
+        `Serviço: ${encodeURIComponent(data.get('servico'))}`;
+      window.open(`https://wa.me/5511988247277?text=${msg}`, '_blank');
+    });
+  </script>
+</body>
+</html>
