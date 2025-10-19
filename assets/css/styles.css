@@ -1,4 +1,4 @@
-/* =========================================================
+   /* =========================================================
    Alfa Conceito — UI Base (BEM + Tokens)
    Autor: Tullu WebLab
    ========================================================= */
@@ -479,4 +479,97 @@ img, video{ max-width: 100%; height: auto; display: block; }
    ========================================================= */
 @media (prefers-reduced-motion: reduce){
   *{ animation: none !important; transition: none !important; }
+}
+/* ===== Seção "Como trabalhamos" (tema invertido azul) ===== */
+.process{
+  padding: 80px 0;
+  background: var(--grad-hero);
+  color: var(--alfa-white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* brilho suave de fundo */
+.process::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,.12), transparent 60%),
+              radial-gradient(circle at 80% 80%, rgba(255,255,255,.08), transparent 60%);
+  pointer-events: none;
+}
+
+/* título e subtítulo */
+.process .section__head h2{
+  color: #fff;
+}
+.process .section__head p{
+  color: rgba(255,255,255,.85);
+}
+
+/* cards */
+.steps{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 18px;
+  counter-reset: step;
+  padding: 0;
+  margin: 0 0 26px;
+  list-style: none;
+}
+
+.steps li{
+  background: #f9fcff;               /* branco-azulado */
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+  position: relative;
+  overflow: hidden;
+  color: #002e53;                     /* texto escuro dentro */
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.steps li:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.15);
+}
+
+.steps li::before{
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font: 900 2.8rem/1 var(--ff-title);
+  color: rgba(0,0,0,.05);
+}
+
+.steps h3{
+  color: var(--alfa-blue-dark);
+  font: 800 1.1rem/1.2 var(--ff-title);
+  margin: 0 0 8px;
+}
+.steps p{
+  color: #1d3853;
+  margin: 0;
+  font-weight: 500;
+}
+
+.process__media{
+  margin-top: 28px;
+}
+.process__media video{
+  width: min(420px,100%);
+  aspect-ratio: 9/16;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.25);
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px){
+  .steps{ grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 740px){
+  .steps{ grid-template-columns: 1fr; }
 }
