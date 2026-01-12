@@ -6,7 +6,6 @@
   <title>Alfa Conceito — Manutenção e Restauração Predial em São Paulo</title>
   <meta name="description" content="Manutenção predial com segurança, durabilidade e acabamento impecável. Fachadas, impermeabilização, pintura e inspeções com drone. Agende uma visita técnica.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Tipos carregados via CSS depois (Poppins/Lato). Mantido leve aqui. -->
 
   <!-- Open Graph / SEO -->
   <meta property="og:title" content="Alfa Conceito — Manutenção e Restauração Predial" />
@@ -14,8 +13,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/og-cover.jpg" />
   <meta property="og:locale" content="pt_BR" />
+
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!-- Instagram Embeds (Reels) -->
+  <script async src="https://www.instagram.com/embed.js"></script>
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -47,7 +49,7 @@
           <li><a href="#como-funciona">Processo</a></li>
           <li><a href="#normas">Normas (NBR 16747)</a></li>
           <li><a href="#provas">Resultados</a></li>
-          <li><a href="#reels-1">Vídeos</a></li>
+          <li><a href="#videos">Vídeos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -82,16 +84,14 @@
         </ul>
       </div>
       <div class="hero__media">
-        <!-- imagem/ vídeo de fachada — substitua o poster -->
         <video class="hero__video" playsinline muted autoplay loop poster="assets/img/hero-poster.jpg" aria-label="Obra de restauração de fachada">
           <source src="assets/video/hero-vertical.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
-    <!-- Arte IA opcional (PNG 3 prédios, efeito “lego”) -->
-<img src="assets/img/imgpredios.png" alt="Prédios em restauração"
-     class="hero__art" width="600" height="auto" loading="eager" />
 
+    <img src="assets/img/imgpredios.png" alt="Prédios em restauração"
+         class="hero__art" width="600" height="auto" loading="eager" />
   </section>
 
   <!-- ===== Bloco prova rápida (gatilho de reciprocidade) ===== -->
@@ -102,7 +102,7 @@
     </div>
   </section>
 
-  <!-- ===== Serviços (cada item com parágrafo + slot de vídeo vertical) ===== -->
+  <!-- ===== Serviços ===== -->
   <section id="servicos" class="services">
     <div class="container">
       <header class="section__head">
@@ -112,79 +112,99 @@
 
       <div class="cards">
         <!-- Lavagem / hidrojato -->
-        <article class="card service">
+        <article class="card service" id="video-lavagem">
           <div class="service__copy">
             <h3>Lavagem de fachada com hidrojato</h3>
             <p>Remoção de sujidades, fungos e poluentes com pressão controlada, preservando o revestimento original e preparando a superfície para novos sistemas de acabamento.</p>
             <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20visita%20para%20lavagem%20de%20fachada." target="_blank" rel="noopener">Agendar visita</a>
           </div>
+
+          <!-- REEL: Lavagem de fachada -->
           <div class="service__media">
-            <video playsinline muted controls poster="assets/img/serv-lavagem.jpg" class="video-vertical" aria-label="Vídeo vertical: lavagem de fachada">
-              <source src="assets/video/serv-lavagem-vert.mp4" type="video/mp4" />
-            </video>
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DMOPjJoSO8O/"
+              data-instgrm-version="14"
+              style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+            </blockquote>
           </div>
         </article>
 
         <!-- Trincas / percussão -->
-        <article class="card service">
+        <article class="card service" id="video-preventivo">
           <div class="service__copy">
-            <h3>Teste de percussão e correção de trincas</h3>
-            <p>Mapeamento de desprendimentos e fissuras com percussão técnica, seguido de reparo estruturado (abertura, tratamento, selagem e regularização) para restabelecer segurança e estanqueidade.</p>
-            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20avaliação%20para%20trincas%20e%20fissuras." target="_blank" rel="noopener">Agendar avaliação</a>
+            <h3>Prevenção que evita gastos inesperados</h3>
+            <p>Quando a manutenção é feita no tempo certo, ela custa menos que o reparo emergencial. Identificamos riscos (trincas, desplacamentos e infiltrações) e priorizamos o que resolve de verdade.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20uma%20avaliação%20preventiva%20no%20meu%20condomínio." target="_blank" rel="noopener">Agendar avaliação</a>
           </div>
+
+          <!-- REEL: "Você já teve um gasto inesperado..." -->
           <div class="service__media">
-            <video playsinline muted controls poster="assets/img/serv-percussao.jpg" class="video-vertical" aria-label="Vídeo vertical: teste de percussão">
-              <source src="assets/video/serv-percussao-vert.mp4" type="video/mp4" />
-            </video>
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DPg1rGHjUBW/"
+              data-instgrm-version="14"
+              style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+            </blockquote>
           </div>
         </article>
 
         <!-- Impermeabilização -->
-        <article class="card service">
+        <article class="card service" id="video-infiltracao">
           <div class="service__copy">
             <h3>Impermeabilização e juntas de dilatação</h3>
-            <p>Soluções específicas para lajes, marquises e fachadas, com escolha de sistemas de impermeabilização compatíveis ao substrato e ao ambiente, garantindo estanqueidade e durabilidade.</p>
+            <p>Soluções específicas para lajes, marquises e fachadas. Tratamos origem de infiltrações e restauramos estanqueidade para evitar danos progressivos.</p>
             <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20visita%20para%20impermeabilização." target="_blank" rel="noopener">Agendar visita</a>
           </div>
+
+          <!-- REEL: "Muita gente só lembra..." -->
           <div class="service__media">
-            <video playsinline muted controls poster="assets/img/serv-imper.jpg" class="video-vertical" aria-label="Vídeo vertical: impermeabilização">
-              <source src="assets/video/serv-imper-vert.mp4" type="video/mp4" />
-            </video>
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DMX8xLruiZA/"
+              data-instgrm-version="14"
+              style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+            </blockquote>
           </div>
         </article>
 
-        <!-- Pintura -->
-        <article class="card service">
+        <!-- Pintura / Processos -->
+        <article class="card service" id="video-processos">
           <div class="service__copy">
-            <h3>Pintura externa, interna e áreas comuns</h3>
-            <p>Especificação de esquemas de pintura conforme exposição e substrato, correção de patologias e aplicação com controle de qualidade para acabamento uniforme e alta durabilidade.</p>
+            <h3>Pintura predial com processo (sem gambiarra)</h3>
+            <p>Acabamento bonito é consequência de preparação correta. Trabalhamos com especificação por substrato, correção de patologias e aplicação com controle de qualidade.</p>
             <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20orçamento%20de%20pintura%20predial." target="_blank" rel="noopener">Solicitar orçamento</a>
           </div>
+
+          <!-- REEL: Processos de pintura predial -->
           <div class="service__media">
-            <video playsinline muted controls poster="assets/img/serv-pintura.jpg" class="video-vertical" aria-label="Vídeo vertical: pintura predial">
-              <source src="assets/video/serv-pintura-vert.mp4" type="video/mp4" />
-            </video>
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DOMT25xjz9B/"
+              data-instgrm-version="14"
+              style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+            </blockquote>
           </div>
         </article>
 
-        <!-- Pastilhas -->
-        <article class="card service">
+        <!-- Antes/Depois / Restauração -->
+        <article class="card service" id="video-restauracao">
           <div class="service__copy">
-            <h3>Troca de pastilhas e revitalizações</h3>
-            <p>Substituição de peças soltas, rejuntamento técnico e recuperação de áreas com desplacamento, devolvendo a estética e a integridade do sistema de revestimento.</p>
-            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20avaliação%20para%20troca%20de%20pastilhas." target="_blank" rel="noopener">Agendar avaliação</a>
+            <h3>Restauração que valoriza (e dá orgulho)</h3>
+            <p>Recuperação de fachadas com padrão técnico e visual. Você vê o resultado e sente no valor do patrimônio.</p>
+            <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Quero%20uma%20avaliação%20para%20restauração%20de%20fachada." target="_blank" rel="noopener">Agendar avaliação</a>
           </div>
+
+          <!-- REEL: Comercial restauração (fachada precisa...) -->
           <div class="service__media">
-            <video playsinline muted controls poster="assets/img/serv-pastilha.jpg" class="video-vertical" aria-label="Vídeo vertical: troca de pastilhas">
-              <source src="assets/video/serv-pastilha-vert.mp4" type="video/mp4" />
-            </video>
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DL8fjHJv39y/"
+              data-instgrm-version="14"
+              style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+            </blockquote>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== Processo (etapas + slot de vídeo vertical) ===== -->
+  <!-- ===== Processo ===== -->
   <section id="como-funciona" class="process">
     <div class="container">
       <header class="section__head">
@@ -215,38 +235,57 @@
         </li>
       </ol>
 
-      <div class="process__media">
-        <video playsinline muted controls poster="assets/img/processo-poster.jpg" class="video-vertical" aria-label="Vídeo vertical: processo de obra">
-          <source src="assets/video/processo-vert.mp4" type="video/mp4" />
-        </video>
+      <!-- REEL: "A prevenção sempre custará menos..." -->
+      <div class="process__media" id="video-prevencao">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DNZEG_Cpr_d/"
+          data-instgrm-version="14"
+          style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0 auto; padding:0; max-width:540px; width:100%;">
+        </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- ===== Reels / Vitrine 1 ===== -->
-  <section id="reels-1" class="reels">
+  <!-- ===== Vídeos (Vitrine: 3 “reels de prova”) ===== -->
+  <section id="videos" class="reels">
     <div class="container">
       <header class="section__head">
-        <h2>Na prática: obras e bastidores</h2>
-        <p>Vídeos curtos mostrando etapas e resultados reais.</p>
+        <h2>Vídeos reais (sem marketing mágico)</h2>
+        <p>Casos, bastidores e o tipo de problema que a Alfa resolve todo mês.</p>
       </header>
 
       <div class="reels__grid">
-        <!-- Substituir por seus MP4 verticais (ou iframes, se preferir embed IG) -->
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-01.jpg">
-          <source src="assets/video/reel-01.mp4" type="video/mp4" />
-        </video>
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-02.jpg">
-          <source src="assets/video/reel-02.mp4" type="video/mp4" />
-        </video>
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-03.jpg">
-          <source src="assets/video/reel-03.mp4" type="video/mp4" />
-        </video>
+        <!-- REEL: "mais um prédio restaurado... se sua fachada apresenta isso..." -->
+        <div class="reels__item" id="video-sintomas">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DMSrPBhuq7A/"
+            data-instgrm-version="14"
+            style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+          </blockquote>
+        </div>
+
+        <!-- REEL: entrevista rua (valorização) -->
+        <div class="reels__item" id="video-valorizacao">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DPwq2gbj3cN/"
+            data-instgrm-version="14"
+            style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+          </blockquote>
+        </div>
+
+        <!-- REEL: lavagem (repetição ok como prova visual) -->
+        <div class="reels__item" id="video-lavagem-2">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DMOPjJoSO8O/"
+            data-instgrm-version="14"
+            style="background:#fff; border:0; border-radius:16px; box-shadow:none; margin:0; padding:0; max-width:540px; width:100%;">
+          </blockquote>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Normas / NBR 16747 (educação + reciprocidade) ===== -->
+  <!-- ===== Normas / NBR 16747 ===== -->
   <section id="normas" class="standards">
     <div class="container">
       <header class="section__head">
@@ -277,7 +316,7 @@
     </div>
   </section>
 
-  <!-- ===== Provas (antes/depois, depoimentos curtos, selos) ===== -->
+  <!-- ===== Provas ===== -->
   <section id="provas" class="proof">
     <div class="container">
       <header class="section__head">
@@ -318,28 +357,7 @@
     </div>
   </section>
 
-  <!-- ===== Reels / Vitrine 2 (foco em benefício) ===== -->
-  <section id="reels-2" class="reels reels--alt">
-    <div class="container">
-      <header class="section__head">
-        <h2>Segurança, estética e valorização</h2>
-        <p>Veja como cada etapa impacta no resultado final do seu prédio.</p>
-      </header>
-      <div class="reels__grid">
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-04.jpg">
-          <source src="assets/video/reel-04.mp4" type="video/mp4" />
-        </video>
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-05.jpg">
-          <source src="assets/video/reel-05.mp4" type="video/mp4" />
-        </video>
-        <video playsinline muted controls class="video-vertical" poster="assets/img/reel-06.jpg">
-          <source src="assets/video/reel-06.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Sobre (curto e técnico) ===== -->
+  <!-- ===== Sobre ===== -->
   <section id="sobre" class="about">
     <div class="container about__grid">
       <div class="about__copy">
@@ -368,7 +386,7 @@
     </div>
   </section>
 
-  <!-- ===== Contato / Área atendida ===== -->
+  <!-- ===== Contato ===== -->
   <section id="contato" class="contact">
     <div class="container contact__grid">
       <div class="contact__info">
@@ -380,8 +398,8 @@
         </ul>
         <a class="btn btn--secondary" href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener">Solicitar orçamento</a>
       </div>
+
       <div class="contact__form">
-        <!-- Se quiser ativar um formulário depois, mantemos o espaço -->
         <div class="contact__box">
           <h3>Prefere ser contatado?</h3>
           <p>Deixe seus dados que retornamos por WhatsApp.</p>
@@ -420,6 +438,7 @@
           <li><a href="#como-funciona">Processo</a></li>
           <li><a href="#normas">Normas</a></li>
           <li><a href="#provas">Resultados</a></li>
+          <li><a href="#videos">Vídeos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -430,7 +449,6 @@
       </div>
     </div>
 
-    <!-- ===== Footer Credit (seu bloco) ===== -->
     <div class="footer__credit">
       <p class="footer__credit-text">Desenvolvido por</p>
       <a href="https://tulludigital.github.io/TulluMotion/"
@@ -443,7 +461,7 @@
     </div>
   </footer>
 
-  <!-- ===== Barra fixa conversão (mobile/desktop) ===== -->
+  <!-- ===== Barra fixa conversão ===== -->
   <div class="sticky-cta" role="region" aria-label="Ação rápida">
     <a class="btn btn--whatsapp"
        href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Quero%20agendar%20uma%20visita%20técnica."
@@ -455,11 +473,18 @@
   <!-- ===== Botão flutuante WhatsApp ===== -->
   <a href="https://wa.me/5511988247277?text=Olá%20Alfa%20Conceito!%20Preciso%20de%20ajuda."
      class="fab-whatsapp" aria-label="Abrir WhatsApp" target="_blank" rel="noopener">
-     <!-- Ícone será aplicado via CSS ou SVG inline no CSS -->
   </a>
 
   <!-- (Opcional) script para enviar formulário ao WhatsApp/n8n futuramente -->
   <script>
+    // Garante que os embeds do Instagram renderizem quando a página carregar.
+    // (Se o script embed.js já rodou, o fallback é chamar process(), se existir.)
+    window.addEventListener('load', function(){
+      if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+        window.instgrm.Embeds.process();
+      }
+    });
+
     document.querySelector('[data-form="lead-form"]')?.addEventListener('submit', function(e){
       e.preventDefault();
       const data = new FormData(this);
