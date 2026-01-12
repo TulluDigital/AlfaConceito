@@ -629,3 +629,95 @@ img, video{ max-width: 100%; height: auto; display: block; }
     display: block;
   }
 }
+
+/* =========================================================
+   FIX DEFINITIVO: HERO COMPACTO + TEXTO ALINHADO À IMAGEM
+   ========================================================= */
+
+/* Remove altura artificial e excesso de padding */
+section.hero,
+#inicio.hero{
+  min-height: unset !important;
+  height: auto !important;
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+/* Grid do hero: alinha conteúdo na base (mesma linha da imagem) */
+.hero__grid{
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: end !important;   /* <<< CHAVE: texto desce para a altura da imagem */
+  gap: 24px !important;
+}
+
+/* Texto não fica mais "flutuando" no meio */
+.hero__copy{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ajuste fino do espaçamento interno do texto */
+.hero__copy h1{
+  margin-top: 0;
+}
+.hero__copy p{
+  margin-bottom: 14px;
+}
+
+/* Mídia do hero alinhada na base */
+.hero__media{
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Vídeo */
+.hero__video{
+  max-height: 520px;      /* evita esticar demais */
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Ilustração dos prédios: maior e ancorada embaixo */
+.hero__art{
+  position: absolute;
+  right: 0;
+  bottom: 0;                 /* <<< gruda no chão do hero */
+  width: min(620px, 42vw);   /* cresce visualmente */
+  max-width: 100%;
+  pointer-events: none;
+  filter: drop-shadow(0 18px 50px rgba(0,0,0,.35));
+}
+
+/* Remove "vazio" visual criado por pseudo-elementos */
+.hero::before,
+.hero::after{
+  height: 100% !important;
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+@media (max-width: 920px){
+  .hero__grid{
+    grid-template-columns: 1fr;
+    align-items: start !important;   /* mobile volta para topo */
+  }
+
+  .hero__media{
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .hero__video{
+    max-height: 420px;
+  }
+
+  .hero__art{
+    position: relative;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+
