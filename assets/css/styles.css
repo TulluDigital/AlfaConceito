@@ -719,5 +719,81 @@ section.hero,
     margin-top: 12px;
   }
 }
+/* =========================================================
+   FIX HERO: sem vídeo, texto + imagem lado a lado
+   - imagem colada no chão
+   - texto “desce” junto (mesma altura visual)
+   Cole no FINAL do CSS
+   ========================================================= */
+
+#inicio.hero{
+  /* altura automática, sem “ar” extra */
+  min-height: unset !important;
+  height: auto !important;
+
+  /* padding controlado */
+  padding-block: clamp(44px, 6vw, 84px) !important;
+  overflow: hidden;
+}
+
+/* grid: duas colunas e alinhamento na base */
+#inicio .hero__grid{
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: end;            /* CHAVE: texto e imagem na base */
+  gap: clamp(16px, 2.2vw, 28px);
+}
+
+/* texto sem “flutuar” */
+#inicio .hero__copy{
+  margin: 0;
+  padding: 0;
+}
+
+/* ajusta o “ar” do texto */
+#inicio .hero__copy p{ margin-bottom: 12px; }
+#inicio .hero__ctas{ margin-bottom: 12px; }
+
+/* container da imagem: cola no chão */
+#inicio .hero__media{
+  display: flex;
+  align-items: flex-end;       /* CHAVE: imagem gruda embaixo */
+  justify-content: flex-end;
+}
+
+/* a imagem em si: sem absolute; fica “no chão” naturalmente */
+#inicio .hero__art{
+  width: min(680px, 42vw);
+  height: auto;
+  display: block;
+  margin: 0;                   /* sem margem que crie vazio */
+  transform: translateY(10px);  /* empurra um pouco pra “assentar” no chão */
+  filter: drop-shadow(0 18px 50px rgba(0,0,0,.35));
+  pointer-events: none;
+}
+
+/* limpa pseudo-elementos que podem estar criando “altura” visual */
+#inicio.hero::before,
+#inicio.hero::after{
+  height: 100% !important;
+}
+
+/* responsivo */
+@media (max-width: 920px){
+  #inicio .hero__grid{
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  #inicio .hero__media{
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  #inicio .hero__art{
+    width: min(560px, 92%);
+    transform: translateY(0);
+  }
+}
 
 
